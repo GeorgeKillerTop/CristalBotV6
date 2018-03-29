@@ -1,0 +1,22 @@
+{
+  "name": "CristalVic",
+  "description": "CristalVic bot",
+  "version": "0.0.0",
+  "main": "bot.js",
+  "scripts": {
+    "start": "node bot.js"
+  },
+  "dependencies": {
+    "discord.js": "^11.3.0",
+    "discord.js-arbitrary-ffmpeg": "^1.0.0",
+    "discord.js-musicbot-addon": "^1.10.2",
+    "ffmpeg": "0.0.4",
+    "ffmpeg-binaries": "^3.2.2-3",
+    "forever-monitor": "^1.7.1",
+    "fs": "0.0.1-security",
+    "opusscript": "0.0.6",
+    "request": "^2.83.0",
+    "superagent": "^3.8.2",
+    "ytdl-core": "^0.20.2"
+  }
+}
