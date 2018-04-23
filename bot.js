@@ -4,7 +4,6 @@ const ms = require("ms");
 const YouTube = require('simple-youtube-api');
 
 const GOOGLE_API_KEY = "AIzaSyDUmo-BtB5oQr5Y3RSgYYBMj9rFKMr-W2s";
-const TOKEN = "NDIyMTExMzU4MzM1ODQ0Mzgy.DZq5Yw.zYRWQGzGd0en8qk_tGi9UhsLK2M";
 const prefix = "%";
 
 const youtube = new YouTube(GOOGLE_API_KEY);
