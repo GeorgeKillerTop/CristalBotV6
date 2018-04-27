@@ -293,7 +293,7 @@ Scire pe chat numarul corespunzator videoclipului pe care vrei sa il asculti `)
             .addField("%help-divertisment", '> detalii despre partea legata de divertisment')
             .addField("%help-admin", '> detalii despre partea legata de administatia serverului')
             .addField("%info", '> Informatii despre CristalVic')
-            .addField("Add CristalVic on your server", '> https://discordapp.com/api/oauth2/authorize?client_id=422080381299326986&permissions=0&scope=bot')
+            .addField("Add CristalVic on your server", '> https://discordapp.com/api/oauth2/authorize?client_id=422080381299326986&permissions=8&scope=bot')
             .setTimestamp();
             message.channel.sendMessage(E8);
             break;
