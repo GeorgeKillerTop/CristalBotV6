@@ -4,6 +4,7 @@ const ms = require("ms");
 const YouTube = require('simple-youtube-api');
 const GOOGLE_API_KEY = "AIzaSyDUmo-BtB5oQr5Y3RSgYYBMj9rFKMr-W2s";
 const prefix = "%";
+const moment = require("moment");
 const fs = require("fs");
 const youtube = new YouTube(GOOGLE_API_KEY);
 const queue = new Map();
@@ -75,6 +76,17 @@ if (message.author.bot) return undefined;
     var args3 = message.content.substring(prefix.length).split(" ");
 
     switch (args3[0].toLowerCase()) {
+        case "data":  
+        message.channel.sendMessage(`Acum este **${moment().format('HH:mm:ss  YYYY.MM.DD')}**`); 
+            break;     
+        case "pedofil":  
+        var E53 = new Discord.RichEmbed()
+        .setAuthor("CristlaVic",bot.user.avatarURL,'https://www.youtube.com/channel/UC6Bt4LtCecz3Zl2VGCsCYRA')
+        .setColor("#15f153")
+        .addField("Informatii: ", message.author.username + " este pedofil in proportie de " + r1[Math.floor(Math.random() * r1.length)])
+        .setTimestamp();
+        message.channel.sendMessage(E53); 
+            break;     
         case "gay":  
         var E1 = new Discord.RichEmbed()
         .setAuthor("CristlaVic",bot.user.avatarURL,'https://www.youtube.com/channel/UC6Bt4LtCecz3Zl2VGCsCYRA')
@@ -369,6 +381,8 @@ Scire pe chat numarul corespunzator videoclipului pe care vrei sa il asculti `)
             .addField("%bani", '> Iti arata bani tai') 
             .addField("%pay", '> Trimite bani unui user') 
             .addField("%avatar", '> Arata avatarul unui user') 
+            .addField("%pedofil", '> Arata cat de pedofil esti') 
+            .addField("%data", '> Arata ora exacta') 
             .setTimestamp();
             message.channel.sendMessage(E10);
             break;
