@@ -400,7 +400,7 @@ Scire pe chat numarul corespunzator videoclipului pe care vrei sa il asculti `)
             return message.channel.send( r2[Math.floor(Math.random() * r2.length)] );
             break;
         case "meme":
-            return message.channel.send( r3[Math.floor(Math.random() * r3.length)] );
+            return message.channel.send("https://imgur.com/a/tEdHaf2");
             break;
         case "server-info":
             var E11 = new Discord.RichEmbed()
