@@ -805,26 +805,6 @@ var  r2 = [
   "https://imgur.com/a/sY3aE",
   "https://imgur.com/a/QRjLf"
 ]
-var r3 = [
-   "https://imgur.com/vmpzDtf",
-   "https://imgur.com/7tC1MM6",
-   "https://imgur.com/XiWmj56",
-   "https://imgur.com/pCxvnl8",
-   "https://imgur.com/FYno1Lp",
-   "https://imgur.com/CWeeruD",
-   "https://imgur.com/dMO3Kdw",
-   "https://imgur.com/LaQ9waz",
-   "https://imgur.com/q2jrVlA",
-   "https://imgur.com/kxqyOOS",
-   "https://imgur.com/KKGF50i",
-   "https://imgur.com/K2nBM1h",
-   "https://imgur.com/TRAN6hf",
-   "https://imgur.com/h8Ek4TR",
-   "https://imgur.com/hWRsL29",
-   "https://imgur.com/20js0PC",
-   "https://imgur.com/7F7cfgP",
-   "https://imgur.com/452j4UZ"
-]
 
 var  r4 = [
     "Da",
