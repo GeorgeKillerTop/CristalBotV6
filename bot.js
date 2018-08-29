@@ -1,4 +1,4 @@
-const Discord = require ("discord.js");
+const Discord = require ("discord.jss");
 const ytdl = require('ytdl-core');
 const ms = require("ms");
 const YouTube = require('simple-youtube-api');
@@ -917,4 +917,4 @@ function play(guild, song , message , channel) {
             channel.sendEmbed(embed);
       });
 
-"bot.login(process.env.BOT_TOKEN)"
+ bot.login(process.env.BOT_TOKEN);
