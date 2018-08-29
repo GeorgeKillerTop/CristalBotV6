@@ -1,4 +1,4 @@
-const Discord = require ("discord.jss");
+const Discord = require ("discord.js");
 const ytdl = require('ytdl-core');
 const ms = require("ms");
 const YouTube = require('simple-youtube-api');
