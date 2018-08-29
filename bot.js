@@ -917,4 +917,4 @@ function play(guild, song , message , channel) {
             channel.sendEmbed(embed);
       });
 
-bot.login(process.env.BOT_TOKEN);
+bot.login("process.env.BOT_TOKEN");
