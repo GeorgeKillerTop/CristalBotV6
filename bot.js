@@ -477,8 +477,8 @@ Scire pe chat numarul corespunzator videoclipului pe care vrei sa il asculti `)
         var interval = setTimeout (function (){message.channel.sendMessage(`${obiect1}` + " + " + `${obiect2}` + " se potrivesc in poportie de " + r1[Math.floor(Math.random() * r1.length)])}, 3000); 
             break;
         case "marry":
-        let obiect1 = args[1];
-        if(!obiect1) {
+        let Persoana1 = args[1];
+        if(!Persoana1) {
             var E14 = new Discord.RichEmbed()
             .setAuthor("CristlaVic",bot.user.avatarURL,'https://www.youtube.com/channel/UC6Bt4LtCecz3Zl2VGCsCYRA')
             .setColor("#15f153")
@@ -486,8 +486,8 @@ Scire pe chat numarul corespunzator videoclipului pe care vrei sa il asculti `)
             .setTimestamp();
             return message.channel.sendMessage(E14); 
         };
-        let obiect2 = args[2];
-        if(!obiect2) {
+        let Persoana2 = args[2];
+        if(!Persoana2) {
         var E15 = new Discord.RichEmbed()
             .setAuthor("CristlaVic",bot.user.avatarURL,'https://www.youtube.com/channel/UC6Bt4LtCecz3Zl2VGCsCYRA')
             .setColor("#15f153")
@@ -496,7 +496,7 @@ Scire pe chat numarul corespunzator videoclipului pe care vrei sa il asculti `)
             return message.channel.sendMessage(E15); 
         };
         message.channel.sendMessage("Se calculeaza...")
-        var interval = setTimeout (function (){message.channel.sendMessage(`${obiect1}` + " + " + `${obiect2}` + " se potrivesc in poportie de " + r1[Math.floor(Math.random() * r1.length)])}, 3000); 
+        var interval = setTimeout (function (){message.channel.sendMessage(`${Persoana1}` + " + " + `${Persoana2}` + " se potrivesc in poportie de " + r1[Math.floor(Math.random() * r1.length)])}, 3000); 
             break;
         case "sexy":  
         message.channel.sendMessage("Se calculeaza...")
