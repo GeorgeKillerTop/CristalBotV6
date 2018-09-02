@@ -1,11 +1,13 @@
 {
-  "name": "cristalvic-bot",
-  "description": "Budgie bot",
-  "version": "0.0.0",
+  "name": "cristalvic-bot-master",
+  "version": "1.0.0",
+  "description": "",
   "main": "bot.js",
   "scripts": {
-    "start": "node bot.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "author": "",
+  "license": "ISC",
   "dependencies": {
     "discord.js": "^11.4.2",
     "ffmpeg": "0.0.4",
