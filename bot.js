@@ -79,21 +79,13 @@ if (message.author.bot) return undefined;
         case "data":  
         message.channel.sendMessage(`Acum este **${moment().format('HH:mm:ss  YYYY.MM.DD')}**`); 
             break;     
-        case "pedofil":  
-        var E53 = new Discord.RichEmbed()
-        .setAuthor("CristlaVic",bot.user.avatarURL,'https://www.youtube.com/channel/UC6Bt4LtCecz3Zl2VGCsCYRA')
-        .setColor("#15f153")
-        .addField("Informatii: ", message.author.username + " este pedofil in proportie de " + r1[Math.floor(Math.random() * r1.length)])
-        .setTimestamp();
-        message.channel.sendMessage(E53); 
+        case "pedofil": 
+        message.channel.sendMessage("Se calculeaza...")
+        var interval = setTimeout (function (){message.channel.sendMessage(message.author.username + " este pedofil in proportie de " + r1[Math.floor(Math.random() * r1.length)])}, 3000); 
             break;     
         case "gay":  
-        var E1 = new Discord.RichEmbed()
-        .setAuthor("CristlaVic",bot.user.avatarURL,'https://www.youtube.com/channel/UC6Bt4LtCecz3Zl2VGCsCYRA')
-        .setColor("#15f153")
-        .addField("Informatii: ", message.author.username + " este gay in proportie de " + r1[Math.floor(Math.random() * r1.length)])
-        .setTimestamp();
-        message.channel.sendMessage(E1); 
+        message.channel.sendMessage("Se calculeaza...")
+        var interval = setTimeout (function (){message.channel.sendMessage(message.author.username + " este gay in proportie de " + r1[Math.floor(Math.random() * r1.length)])}, 3000); 
             break;     
           case "info":
             var E2 = new Discord.RichEmbed()
@@ -113,17 +105,16 @@ if (message.author.bot) return undefined;
           .setAuthor("CristlaVic",bot.user.avatarURL,'https://www.youtube.com/channel/UC6Bt4LtCecz3Zl2VGCsCYRA')
           .setTitle("**Colaborari**","")
           .setColor("#15f153")
-          .addField("**TheTNT**","[Go to channel](https://www.youtube.com/channel/UC4aJBvJdAHeHeY94UmFzXUA)")
           .addField("**Chaos**","[Go to channel](https://www.youtube.com/channel/UCIwf6UxJi5OxMvbxqyDl3lw)")
+          .addField("**TheTNT**","[Go to channel](https://www.youtube.com/channel/UC4aJBvJdAHeHeY94UmFzXUA)")
           .addField("**ANDY**","[Go to channel](https://www.youtube.com/channel/UCarVqPUSoQPOsRv5ITSXecw)")
-          .addField("**Geofin**","[Go to channel](https://www.youtube.com/channel/UC6_7f-uw0n_G09yuObGb0Zw)")
-          .addField("**Denis Coțovanu**","[Go to channel](https://www.youtube.com/channel/UC8Soa5k-hqJTepJd6ycU-1w)")
+          .addField("**Furia Nopții**","[Go to channel](https://www.youtube.com/channel/UCKAfJK3TNZdPx1ea7wFfgRg)")
           .addField("**Danny LK**","[Go to channel](https://www.youtube.com/channel/UCgvHUDcmxQZg7sgdOKj-Jgw)")
-          .addField("**CristyaN**","[Go to channel](https://www.youtube.com/channel/UCgt_xPF_TFmutVQKmk-f_5g)")
           .addField("**TimeForNether**","[Go to channel](https://www.youtube.com/channel/UCQsjJFx-IU6HrbdFFcO-IjA)")
-          .addField("**GOPE**","[Go to channel](https://www.youtube.com/channel/UCQsjJFx-IU6HrbdFFcO-IjA)")
-          .addField("**Dani DMTE**","[Go to channel](https://www.youtube.com/channel/UCey7As91NW9TU6dyuyTDk_w)")
-          .addField("**Bot Owner**","[Go to channel](https://www.youtube.com/channel/UC80aeTE2YhI6pNGY0Fb0vWA)")
+          .addField("**Valtohis**","[Go to channel](https://www.youtube.com/channel/UCyzLy9zNZ10OGefN6SXPyTQ)")
+          .addField("**Lumea Desenelor TM**","[Go to channel](https://www.youtube.com/channel/UCJL-1UbADPRD21Z9NZOiysg)")
+          .addField("**Denis Coțovanu**","[Go to channel](https://www.youtube.com/channel/UC8Soa5k-hqJTepJd6ycU-1w)")
+          .addField("**Bot Owner**","-")
           .setTimestamp();
           
           message.channel.sendMessage(E1); 
@@ -349,7 +340,7 @@ Scire pe chat numarul corespunzator videoclipului pe care vrei sa il asculti `)
             .addField("%help-divertisment", '> detalii despre partea legata de divertisment')
             .addField("%help-admin", '> detalii despre partea legata de administatia serverului')
             .addField("%info", '> Informatii despre CristalVic')
-            .addField("Add CristalVic on your server", '> https://discordapp.com/api/oauth2/authorize?client_id=422080381299326986&permissions=8&scope=bot')
+            .addField("Invita-l pe CristalVic pe serverul tau", '[Click Aici](https://discordapp.com/api/oauth2/authorize?client_id=422080381299326986&permissions=8&scope=bot)')
             .setTimestamp();
             message.channel.sendMessage(E8);
             break;
@@ -383,6 +374,7 @@ Scire pe chat numarul corespunzator videoclipului pe care vrei sa il asculti `)
             .addField("%avatar", '> Arata avatarul unui user') 
             .addField("%pedofil", '> Arata cat de pedofil esti') 
             .addField("%data", '> Arata ora exacta') 
+            .addField("%marry", '> Combina 2 persoane') 
             .setTimestamp();
             message.channel.sendMessage(E10);
             break;
@@ -462,7 +454,7 @@ Scire pe chat numarul corespunzator videoclipului pe care vrei sa il asculti `)
             message.channel.send(E13);
             reportchannel.send(E12);
             break;
-        case "sanse":
+            case "sanse":
         let obiect1 = args[1];
         if(!obiect1) {
             var E14 = new Discord.RichEmbed()
@@ -481,21 +473,34 @@ Scire pe chat numarul corespunzator videoclipului pe care vrei sa il asculti `)
             .setTimestamp();
             return message.channel.sendMessage(E15); 
         };
-
-        var E16 = new Discord.RichEmbed()
+        message.channel.sendMessage("Se calculeaza...")
+        var interval = setTimeout (function (){message.channel.sendMessage(`${obiect1}` + " + " + `${obiect2}` + " se potrivesc in poportie de " + r1[Math.floor(Math.random() * r1.length)])}, 3000); 
+            break;
+        case "marry":
+        let obiect1 = args[1];
+        if(!obiect1) {
+            var E14 = new Discord.RichEmbed()
             .setAuthor("CristlaVic",bot.user.avatarURL,'https://www.youtube.com/channel/UC6Bt4LtCecz3Zl2VGCsCYRA')
             .setColor("#15f153")
-            .addField("Sanse", `${obiect1}` + " + " + `${obiect2}` + " se potrivesc in poportie de " + r1[Math.floor(Math.random() * r1.length)])
+            .addField("Model", "%marry <Persoana1> + <Persoana2>")
             .setTimestamp();
-            message.channel.sendMessage(E16); 
+            return message.channel.sendMessage(E14); 
+        };
+        let obiect2 = args[2];
+        if(!obiect2) {
+        var E15 = new Discord.RichEmbed()
+            .setAuthor("CristlaVic",bot.user.avatarURL,'https://www.youtube.com/channel/UC6Bt4LtCecz3Zl2VGCsCYRA')
+            .setColor("#15f153")
+            .addField("Model", "%sanse <Persoana1> + <Persoana2>")
+            .setTimestamp();
+            return message.channel.sendMessage(E15); 
+        };
+        message.channel.sendMessage("Se calculeaza...")
+        var interval = setTimeout (function (){message.channel.sendMessage(`${obiect1}` + " + " + `${obiect2}` + " se potrivesc in poportie de " + r1[Math.floor(Math.random() * r1.length)])}, 3000); 
             break;
         case "sexy":  
-            var E17 = new Discord.RichEmbed()
-            .setAuthor("CristlaVic",bot.user.avatarURL,'https://www.youtube.com/channel/UC6Bt4LtCecz3Zl2VGCsCYRA')
-            .setColor("#15f153")
-            .addField("Sanse", message.author + " este sexy in proportie de " + r1[Math.floor(Math.random() * r1.length)])
-            .setTimestamp();
-            message.channel.sendMessage(E17); 
+        message.channel.sendMessage("Se calculeaza...")
+        var interval = setTimeout (function (){message.channel.sendMessage(message.author.username + " este sexy in proportie de " + r1[Math.floor(Math.random() * r1.length)])}, 3000); 
             break;     
         case "mute": 
         if(!message.member.hasPermission("MANAGE_MESSAGES")) {
@@ -603,14 +608,7 @@ Scire pe chat numarul corespunzator videoclipului pe care vrei sa il asculti `)
         }, ms(mutetime)); 
             break;      
             case "CristalVic" :
-            let reason3 = args2.slice(1).join(" ");
-    var E1 = new Discord.RichEmbed()
-    .setAuthor("CristlaVic",bot.user.avatarURL,'https://www.youtube.com/channel/UC6Bt4LtCecz3Zl2VGCsCYRA')
-    .setColor("#15f153")
-    .addField("Intrebarea lui " + message.author.username, `${reason3}`)
-    .addField('Raspunsul lui CristalVic:', r4[Math.floor(Math.random() * r4.length)])
-    .setTimestamp()
-    message.channel.sendMessage(E1); 
+    message.channel.sendMessage(r4[Math.floor(Math.random() * r4.length)]); 
             break;
             case "bani" :
             if(!coins[message.author.id]){
@@ -697,6 +695,106 @@ Scire pe chat numarul corespunzator videoclipului pe care vrei sa il asculti `)
 });
 
 var  r1 = [
+    "-1%",
+    "-2%",
+    "-3%",
+    "-4%",
+    "-5%",
+    "-6%",
+    "-7%",
+    "-8%",
+    "-9%",
+    "-10%",
+    "-11%",
+    "-12%",
+    "-13%",
+    "-14%",
+    "-15%",
+    "-16%",
+    "-17%",
+    "-18%",
+    "-19%",
+    "-20%",
+    "-21%",
+    "-22%",
+    "-23%",
+    "-24%",
+    "-25%",
+    "-26%",
+    "-27%",
+    "-28%",
+    "-29%",
+    "-30%",
+    "-31%",
+    "-32%",
+    "-33%",
+    "-34%",
+    "-35%",
+    "-36%",
+    "-37%",
+    "-38%",
+    "-39%",
+    "-40%",
+    "-41%",
+    "-42%",
+    "-43%",
+    "-44%",
+    "-45%",
+    "-46%",
+    "-47%",
+    "-48%",
+    "-49%",
+    "-50%",
+    "-51%",
+    "-52%",
+    "-53%",
+    "-54%",
+    "-55%",
+    "-56%",
+    "-57%",
+    "-58%",
+    "-59%",
+    "-60%",
+    "-61%",
+    "-62%",
+    "-63%",
+    "-64%",
+    "-65%",
+    "-66%",
+    "-67%",
+    "-68%",
+    "-69%",
+    "-70%",
+    "-71%",
+    "-72%",
+    "-73%",
+    "-74%",
+    "-75%",
+    "-76%",
+    "-77%",
+    "-78%",
+    "-79%",
+    "-80%",
+    "-81%",
+    "-82%",
+    "-83%",
+    "-84%",
+    "-85%",
+    "-86%",
+    "-87%",
+    "-88%",
+    "-89%",
+    "-90%",
+    "-91%",
+    "-92%",
+    "-93%",
+    "-94%",
+    "-95%",
+    "-96%",
+    "-97%",
+    "-98%",
+    "-99%",
+    "-100%",
     "0%",
     "1%",
     "2%",
@@ -797,7 +895,8 @@ var  r1 = [
     "97%",
     "98%",
     "99%",
-    "100%"
+    "100%",
+    "101%"
   ]
 var  r2 = [
   "https://imgur.com/a/3xIG8",
@@ -916,5 +1015,4 @@ function play(guild, song , message , channel) {
       
             channel.sendEmbed(embed);
       });
-
  bot.login(process.env.BOT_TOKEN);
