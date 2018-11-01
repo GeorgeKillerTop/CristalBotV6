@@ -392,7 +392,7 @@ Scire pe chat numarul corespunzator videoclipului pe care vrei sa il asculti `)
             return message.channel.send( r2[Math.floor(Math.random() * r2.length)] );
             break;
         case "CristalVic" :
-            return message.channel.send(`message.author, ${r4[Math.floor(Math.random() * r4.length)]} `);
+            return message.channel.send(r4[Math.floor(Math.random() * r4.length)]);
             break;
         case "meme":
             return message.channel.send("https://imgur.com/a/tEdHaf2");
