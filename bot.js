@@ -433,7 +433,7 @@ Scire pe chat numarul corespunzator videoclipului pe care vrei sa il asculti `)
             return message.channel.sendMessage(E15); 
         };
         message.channel.sendMessage("Se calculeaza...")
-        var interval = setTimeout (function (){message.channel.sendMessage(`${obiect1}` + " + " + `${obiect2}` + " se potrivesc in poportie de " + r1[Math.floor(Math.random() * r1.length)])}, 3000); 
+        var interval = setTimeout (function (){message.channel.sendMessage(`${obiect1}` + " + " + `${obiect2}` + " se potrivesc in poportie de " + r5[Math.floor(Math.random() * r5.length)])}, 3000); 
             break;
         case "marry":
         let Persoana1 = args[1];
@@ -818,7 +818,7 @@ var  r4 = [
     "Idk"
   ]
 var  r5 = [
-    "101% george cu siguranta se va fute cu ale"
+    "101% , Gaie o sa o futa pe Aliz"
   ]
 
   
