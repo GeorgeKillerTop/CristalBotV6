@@ -459,6 +459,9 @@ Scire pe chat numarul corespunzator videoclipului pe care vrei sa il asculti `)
             break;
         case "sexy":  
         message.channel.sendMessage("Se calculeaza...")
+		   if(message.author.id == 421760890908704778)
+			        var interval = setTimeout (function (){message.channel.sendMessage(message.author.username + " este sexy in proportie de -1000")}, 3000);
+		    else
         var interval = setTimeout (function (){message.channel.sendMessage(message.author.username + " este sexy in proportie de " + r1[Math.floor(Math.random() * r1.length)])}, 3000); 
             break;     
         case "mute": 
